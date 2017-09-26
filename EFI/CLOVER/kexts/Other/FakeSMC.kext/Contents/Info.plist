@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BuildMachineOSBuild</key>
-	<string>16F73</string>
+	<string>15C50</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>6.25-333-g05e0f4be.1759</string>
+	<string>6.18-313-g671f31c.1707</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -25,11 +25,11 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1759</string>
+	<string>1707</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>8E3004b</string>
+	<string>7C68</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
@@ -37,9 +37,9 @@
 	<key>DTSDKName</key>
 	<string>macosx10.8</string>
 	<key>DTXcode</key>
-	<string>0833</string>
+	<string>0720</string>
 	<key>DTXcodeBuild</key>
-	<string>8E3004b</string>
+	<string>7C68</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>AGPM</key>
@@ -12216,7 +12216,7 @@
 					<array>
 						<string>{rev</string>
 						<data>
-						ATAPAAAD
+						AikPAAAk
 						</data>
 					</array>
 					<key>RMde</key>
@@ -12269,7 +12269,7 @@
 				<key>debug</key>
 				<false/>
 				<key>smc-compatible</key>
-				<string>smc-napa</string>
+				<string>smc-huronriver</string>
 				<key>trace</key>
 				<false/>
 			</dict>
@@ -12282,9 +12282,9 @@
 			<key>IOResourceMatch</key>
 			<string>FakeSMCKeyStore</string>
 			<key>RM,Build</key>
-			<string>Release-rehabman</string>
+			<string>Release-RehabMan</string>
 			<key>RM,Version</key>
-			<string>FakeSMC 1759</string>
+			<string>FakeSMC 1707</string>
 		</dict>
 		<key>FakeSMCKeyStore</key>
 		<dict>
@@ -12303,9 +12303,9 @@
 		</dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2017 netkas. All rights reserved.</string>
+	<string>Copyright © 2015 netkas. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>
-	<string>1429</string>
+	<string>1212</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.iokit.IOACPIFamily</key>
