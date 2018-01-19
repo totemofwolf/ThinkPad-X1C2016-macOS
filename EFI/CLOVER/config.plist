@@ -12,9 +12,9 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>DeleteUnused_400000</key>
+				<key>AddHDMI</key>
 				<true/>
-				<key>FixRegions_10000000</key>
+				<key>FixRegions</key>
 				<true/>
 			</dict>
 			<key>Name</key>
@@ -169,9 +169,9 @@
 			<key>Generate</key>
 			<dict>
 				<key>CStates</key>
-				<true/>
+				<false/>
 				<key>PStates</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>PluginType</key>
 			<integer>1</integer>
@@ -185,7 +185,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 darkwake=0 kext-dev-mode=1</string>
+		<string>dart=0 darkwake=8</string>
 		<key>CustomLogo</key>
 		<false/>
 		<key>Debug</key>
@@ -199,16 +199,14 @@
 		<key>Timeout</key>
 		<integer>3</integer>
 		<key>XMPDetection</key>
-		<false/>
+		<string>Yes</string>
 	</dict>
 	<key>CPU</key>
 	<dict>
 		<key>HWPEnable</key>
 		<true/>
-		<key>Type</key>
-		<string>0x0605</string>
 		<key>UseARTFrequency</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -232,6 +230,11 @@
 			<key>Inject</key>
 			<string>3</string>
 		</dict>
+		<key>FakeID</key>
+		<dict>
+			<key>IntelGFX</key>
+			<string>0x19168086</string>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
@@ -248,6 +251,10 @@
 	</array>
 	<key>GUI</key>
 	<dict>
+		<key>Hide</key>
+		<array>
+			<string>Windows</string>
+		</array>
 		<key>Language</key>
 		<string>en:0</string>
 		<key>Mouse</key>
@@ -275,7 +282,7 @@
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>bluemac</string>
+		<string>ThinkPad</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -315,9 +322,9 @@
 		<true/>
 		<key>Debug</key>
 		<false/>
+		<key>FakeCPUID</key>
+		<string>0x0406e3</string>
 		<key>KernelCpu</key>
-		<false/>
-		<key>KernelHaswellE</key>
 		<false/>
 		<key>KernelLapic</key>
 		<true/>
@@ -342,6 +349,8 @@
 				</data>
 			</dict>
 		</array>
+		<key>KernelXCPM</key>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -430,7 +439,7 @@
 				<key>Comment</key>
 				<string>Enable lid wake for 0x19260004 credit syscl/lighting/Yating Zhou</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				CgsDAAAHBgADAAAABAAAAA==
@@ -462,7 +471,7 @@
 				<key>Comment</key>
 				<string>Enable lid wake for 0x19260002 credit syscl/lighting/Yating Zhou</string>
 				<key>Disabled</key>
-				<false/>
+				<true/>
 				<key>Find</key>
 				<data>
 				ChMDAAAABgAAAAAAAAAAAA==
@@ -572,17 +581,51 @@
 				AQMDAwAAIAIAAFABAAAAgA==
 				</data>
 			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Skylake AppleAPIC Patch (c) Pike R. Alpha</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				wegQD7bw
+				</data>
+				<key>Name</key>
+				<string>AppleAPIC</string>
+				<key>Replace</key>
+				<data>
+				vhcAAACQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Laptop Intel HD 520 HDMI Audio And LVDV To EDP</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AAAIAAIAAACYBAAAAQUJAAAEAADHAwAAAgQKAAAEAAA=
+				</data>
+				<key>Name</key>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AAAIAAAEAACYAAAAAQUJAAAIAADHAwAAAgQKAAAIAAA=
+				</data>
+			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
 		<key>BooterConfig</key>
-		<string>0x28</string>
+		<string>0x2a</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>Mobile</key>
+		<true/>
 		<key>ProductName</key>
 		<string>MacBookPro13,1</string>
 	</dict>
